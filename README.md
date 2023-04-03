@@ -1,2 +1,4 @@
-# UMatter
-Small project for mental health web application design; UTSC CSCB20 Assignment 3
+#  üMatter
+A little project for helping those who seek it, whether physical or mental. 
+UTSC CSCB20 Assignment 3.
+:)
