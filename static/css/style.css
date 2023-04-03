@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+/*setting up frequent tools*/
+
+:root{
+  --green: #27ae60;
+  --dark-color: #219150;
+  --black: #444;
+  --light-color: #666;
+  --border:.1rem solid rgba(0,0,0,.1);
+  --border-hover:.1rem solid var(--black);
+  --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+/*general typsetting*/
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding: 0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition:all .2s linear;
+  transition:width none;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+  width:1rem;
+}
+
+html::-webkit-scrollbar-track{
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+  background:var(--black);
+}
+
+section{
+  padding:5rem 9%;
+}
+
+/*credit footer stuff!*/
+
+.credit {
+  bottom: 0;
+  display: auto;
+  background-color: var(--black);
+  padding: 2rem 0 2rem;
+  text-align: center;
+  margin-top: auto;
+  position: fixed;
+  background: black;
+  z-index: 100000;
+}
+
+.credit .copyright {
+  color: var(--green);
+  padding: 0.7rem;
+  font-size: 1.4rem;
+  position: fixed;
+  text-align: center;
+  background: black;
+  background-color: var(--black);
+  bottom: 0;
+  width:100%;
+  z-index: 1000000;
+}
+
+/*break stuff for non-index pages*/
+
+.break .break {
+  color: whitesmoke;
+  padding: 0.5rem;
+  font-size: 1rem;
+  text-align: center;
+  background: whitesmoke;
+  background-color: var(--green);
+  bottom: 0;
+  width:100%;
+  z-index: 1000000;
+}
+
+/* media queries */
+
+/*this section is misceallaneous css to make everything look nice on different resolutions.
+  it's not really too clean after this note, so we apologize in advance, there are howvever three 
+  different aspect resolutions I focused on :) */
+
+/* Section 1: 991px! */
+
+@media (max-width:991px){
+  html{
+    font-size: 55%;
+  }
+}
+
+/* Section 2: 768px! */
+
+@media (max-width:768px){
+  html{
+    scroll-padding-top: 0;
+  }
+}
+
+/* Section 3: 450px! */
+
+@media (max-width:450px){
+
+  html{
+    font-size: 50%;
+  }
+}
+
+/* nothing else, yay! */
