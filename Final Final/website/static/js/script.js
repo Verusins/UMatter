@@ -6,6 +6,7 @@ document.querySelector('#search-btn').onclick = () =>{
 
 //login form toggle
 loginForm = document.querySelector('.login-form-container');
+loginForm.classList.toggle('active');
 document.querySelector('#login-btn').onclick = () =>{
   loginForm.classList.toggle('active');
 }
