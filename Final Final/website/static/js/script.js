@@ -1,12 +1,8 @@
-//search bar toggle for smaller resolutions
-searchForm = document.querySelector('.search-form');
-document.querySelector('#search-btn').onclick = () =>{
-  searchForm.classList.toggle('active');
-}
-
 //login form toggle
 loginForm = document.querySelector('.login-form-container');
-loginForm.classList.toggle('active');
+if (window.location.href.search(/login/) != -1) {
+  loginForm.classList.toggle('active');
+}
 document.querySelector('#login-btn').onclick = () =>{
   loginForm.classList.toggle('active');
 }

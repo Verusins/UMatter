@@ -1,6 +1,25 @@
 {% extends "base.html" %} {% block title %} Home{% endblock %}
 {% block content %}
-  <!--home content-->
+  <!--login form-->
+  <div class="login-form-container">
+    <a href="/" id="close-login-btn" class="fas fa-times"></a>
+    <form action="" method="POST">
+      <h3>Sign-In</h3>
+      <span>Username</span>
+      <input type="email" name="email" class="box" placeholder="Please Enter Your Email" id="email" required>
+      <span>Password</span>      
+      <input type="password" name="password" class="box" placeholder="Please Enter Your Password" id="password" required>
+      <div class="checkbox">
+        <input type="checkbox" name="" id="remember-me">
+        <label for="remember-me"> Remember Me </label>
+      </div>
+      <input type="submit" value="Sign-In" class="btn">
+      <p>Forgot Password? <a href="#">Click Here</a></p>
+      <p>Don't Have An Account? <a href="/sign-up">Register Now</a></p>
+    </form>
+  </div>
+
+  <!--some content to be displayed at the background-->
   <!-- Yoga to calm the mind and soul (and feel better physcially as well!)-->
   <section class="home" id="home">
     <div class="row">
@@ -37,7 +56,7 @@
   </section>
 
 
-  <!-- Anxiety Disorders section -->
+  <!-- A section to be displayed as Background -->
   <section class="featured" id="featured">
     <h1 class="heading"><span>Anxiety Disorders</span></h1>
     <div class="swiper featured-slider">
@@ -114,160 +133,57 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide box">
           <div class="image">
-            <img src="../static/image/anxiety-1.png" alt="General Anxiety Disorder">
+            <img src="../static/image/mood-1.png" alt="Major Depression">
           </div>
           <div class="content">
-            <h3>General Anxiety Disorder</h3>
-            <p>GAD usually involves a persistent feeling of anxiety or dread, which can interfere with daily life.</p>
-            <a href="anxiety-1.html" class="btn">Learn More</a>
+            <h3>Major Depression</h3>
+            <p>Having less interest in normal activities, feeling sad or hopeless, and other symptoms for at least 2 weeks may mean depression.</p>
+            <a href="mood-1.html" class="btn">Learn More</a>
           </div>
         </div>
         <div class="swiper-slide box">
           <div class="image">
-            <img src="../static/image/anxiety-2.png" alt="Obsessive-Compulsive Disorder">
+            <img src="../static/image/mood-2.png" alt="Dysthymia">
           </div>
           <div class="content">
-            <h3>Obsessive-Compulsive Disorder</h3>
-            <p>OCD is a common, chronic, and long-lasting disorder in which a person has uncontrollable obsessions or compulsions.</p>
-            <a href="anxiety-2.html" class="btn">Learn More</a>
+            <h3>Dysthymia</h3>
+            <p>This is an ongoing (chronic), low-grade, depressed, or irritable mood that lasts for at least 2 years.</p>
+            <a href="mood-2.html" class="btn">Learn More</a>
           </div>
         </div>
         <div class="swiper-slide box">
           <div class="image">
-            <img src="../static/image/anxiety-3.png" alt="Panic Disorder">
+            <img src="../static/image/mood-3.png" alt="Bipolar Disorder">
           </div>
           <div class="content">
-            <h3>Panic Disorder</h3>
-            <p>People with panic disorder have frequent and unexpected panic attacks. </p>
-            <a href="anxiety-3.html" class="btn">Learn More</a>
+            <h3>Bipolar Disorder</h3>
+            <p>With this condition a person has times of depression alternating with times of mania or a higher mood. </p>
+            <a href="mood-3.html" class="btn">Learn More</a>
           </div>
         </div>
         <div class="swiper-slide box">
           <div class="image">
-            <img src="../static/image/anxiety-4.png" alt="Post-Traumatic Stress Disorder">
+            <img src="../static/image/mood-4.png" alt="Mood Disorder Induced by Other Health Condition">
           </div>
           <div class="content">
-            <h3>Post-Traumatic Stress Disorder</h3>
-            <p>PTSD is a disorder that develops in some people who have experienced a shocking, scary, or dangerous event.</p>
-            <a href="anxiety-4.html" class="btn">Learn More</a>
+            <h3>Mood Disorder Induced by Other Health Condition</h3>
+            <p>Many health conditions (including cancer, injuries, infections, and chronic illnesses) can trigger symptoms of depression.</p>
+            <a href="mood-4.html" class="btn">Learn More</a>
           </div>
         </div>
         <div class="swiper-slide box">
           <div class="image">
-            <img src="../static/image/anxiety-5.png" alt="Social Anxiety Disorder">
+            <img src="../static/image/mood-5.png" alt="Substance-induced Mood Disorder">
           </div>
           <div class="content">
-            <h3>Social Anxiety Disorder</h3>
-            <p>Social anxiety disorder is an intense, persistent fear of being watched and judged by others.</p>
-            <a href="anxiety-5.html" class="btn">Learn More</a>
+            <h3>Substance-induced Mood Disorder</h3>
+            <p>Symptoms of depression that are due to the effects of medicine, drug abuse, alcoholism, exposure to toxins, or other forms of treatment.</p>
+            <a href="mood-5.html" class="btn">Learn More</a>
           </div>
         </div>
       </div>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-    </div>
-  </section>
-
-  <!-- Deep Breathing -->
-  <!-- calm the mind -->
-  <section class="breathe">
-    <div class="content">
-      <h3>In and Out</h3>
-      <h1>Deep Breathing</h1>
-      <h2>Calm the Mind, Calm the Soul</h2>
-      <p>To better understand your respiratory system, first picture a tree.
-
-        The trachea, or windpipe, is like the trunk of the tree. From there, the airways divide and divide, like branches of a tree. At the end of a tree’s branches are leaves; similarly, the ends of the bronchioles have alveoli also known as air sacs, where gas exchange takes place.
-        In the air sacs, freshly inhaled oxygen is passed to the blood, which is then pumped through the body; the air sacs also absorb carbon dioxide, which is then removed from the body through exhalation.
-        The diaphragm, a thin muscle that separates the chest and abdominal cavities, tightens and pulls down as you breathe in, opening the chest cavity and allowing the lungs to expand. To breathe out, your diaphragm relaxes and moves upward, pushing air out.
-        
-        
-        Though it may feel unnatural to breathe deeply, the practice comes with various benefits. Deep breaths are more efficient: they allow your body to fully exchange incoming oxygen with outgoing carbon dioxide. They have also been shown to slow the heartbeat, lower or stabilize blood pressure and lower stress.
-        To experience deep breathing, find a comfortable place to sit or lie down. Breathe slowly and deeply through your nose, causing your stomach to rise and expand. Exhale fully.
-        “Breathing deep for a minute isn’t going to improve your lung capacity,” Hoyt said. “But deep breathing is a good way to reduce stress and relax.”
-      </p>
-    </div>
-    <div class="image">
-      <img src="../static/image/breathe.png" alt="Deep Breathing">
-    </div>
-  </section>
-
-    <!-- Psychotic Disorders section -->
-    <section class="featured" id="featured">
-      <h1 class="heading"><span>Psychotic Disorders</span></h1>
-      <div class="swiper featured-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide box">
-            <div class="image">
-              <img src="../static/image/anxiety-1.png" alt="General Anxiety Disorder">
-            </div>
-            <div class="content">
-              <h3>General Anxiety Disorder</h3>
-              <p>GAD usually involves a persistent feeling of anxiety or dread, which can interfere with daily life.</p>
-              <a href="anxiety-1.html" class="btn">Learn More</a>
-            </div>
-          </div>
-          <div class="swiper-slide box">
-            <div class="image">
-              <img src="../static/image/anxiety-2.png" alt="Obsessive-Compulsive Disorder">
-            </div>
-            <div class="content">
-              <h3>Obsessive-Compulsive Disorder</h3>
-              <p>OCD is a common, chronic, and long-lasting disorder in which a person has uncontrollable obsessions or compulsions.</p>
-              <a href="anxiety-2.html" class="btn">Learn More</a>
-            </div>
-          </div>
-          <div class="swiper-slide box">
-            <div class="image">
-              <img src="../static/image/anxiety-3.png" alt="Panic Disorder">
-            </div>
-            <div class="content">
-              <h3>Panic Disorder</h3>
-              <p>People with panic disorder have frequent and unexpected panic attacks. </p>
-              <a href="anxiety-3.html" class="btn">Learn More</a>
-            </div>
-          </div>
-          <div class="swiper-slide box">
-            <div class="image">
-              <img src="../static/image/anxiety-4.png" alt="Post-Traumatic Stress Disorder">
-            </div>
-            <div class="content">
-              <h3>Post-Traumatic Stress Disorder</h3>
-              <p>PTSD is a disorder that develops in some people who have experienced a shocking, scary, or dangerous event.</p>
-              <a href="anxiety-4.html" class="btn">Learn More</a>
-            </div>
-          </div>
-          <div class="swiper-slide box">
-            <div class="image">
-              <img src="../static/image/anxiety-5.png" alt="Social Anxiety Disorder">
-            </div>
-            <div class="content">
-              <h3>Social Anxiety Disorder</h3>
-              <p>Social anxiety disorder is an intense, persistent fear of being watched and judged by others.</p>
-              <a href="anxiety-5.html" class="btn">Learn More</a>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-      </div>
-    </section>
-
-  <!-- about us -->
-  <section class="about-us" id="about-us">
-    <div class="image">
-      <img src="../static/image/logo.PNG" alt="logo">
-    </div>
-    <div class="content">
-      <h3>Meet the Creators!</h3>
-      <h1>About üMatter</h1>
-      <h2>Developed by Tharuth Attanayake and Sigmund Wang</h2>
-      <p>üMatter wants to help people like you find and get the help they need, alongside learning more about some common mental health disorders, and some ways to help put your minds at ease.
-        Our mission is to help you find out about mental health disorders, and small ways to possibly calm your minds, through our deep breathing and yoga subpages!
-        We also have a small test to help  decide whether additional help is recommended from professionals rather than just some random Computer Science students on the Internet, and pages to find what the help you deserve!
-        Please, remember that we aren't professionals, and the test is more of an educated guess than anything else, rather than a diagonsis; we can and will be wrong, but just want to try and help.
-        Always take care of yourself, you matter.
-      </p>
     </div>
   </section>
 {% endblock %}
