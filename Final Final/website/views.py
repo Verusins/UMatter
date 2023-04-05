@@ -8,12 +8,12 @@ def home():
 
 @views.route('/evaluation')
 def evaluation():
-    return render_template("evaluation.html")
+    return "Evaluation"
 
 @views.route('/professionals')
 def professionals():
-    return render_template("professionals.html")
+    return "Professionals"
 
 @views.route('/support')
 def support():
-    return render_template("support.html")
+    return "Support"
