@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<!-- Group Members: 
+Member 1: Xinge Wang - 1008837822
+Member 2: Tharuth Attanayake - 1006387161
+-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>üMatter{% block title %}{% endblock %}</title>
+  <!-- swiper head, font website and custom css file -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="../static/css/style.css">
+</head>
+
+<body>
+  <!-- header + top navbar-->
+  <header class="header">
+    <div class="header-1">
+      <a href="/" class="logo"> <i class="fas fa-smile"></i>  üMatter </a>
+      <div class="icons">
+        <div id="search-btn" class="fas fa-search"></div>
+        <a href="/" class="fas fa-home"></a>
+        <a id="login-btn" class="fas fa-user" href="/login"></a>
+      </div>
+    </div>
+    <div class="header-2">
+      <nav class="navbar">
+        <a id="login" href="/">Home</a>
+        <a id="evaluation" href="/evaluation">Evaluation</a>
+        <a id="professtionals" href="/professionals">Professionals</a>
+        <a id="support" href="/support">Support</a>
+        <a id="user" href="/login">User</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- vertical navbar-->
+  <nav class="vertical-navbar">
+    <ul>
+        <li><a href="/" class="fas fa-home"></a></li>
+        <li><a href="/evaluation" class="fas fa-marker"></a></li>
+        <li><a href="/professionals" class="fas fa-prescription-bottle"></a></li>
+        <li><a href="/support" class="fas fa-question"></a></li>
+        <li><a href="/login" class="fas fa-user"> </a></li>
+    </ul>
+  </nav>
+
+  <!-- actual content -->
+  <div class="container">
+  {% block content %}{% endblock %}
+  </div>
+
+  <!-- swiper and custom js script -->
+  <!-- swiper is the script that let me get the really cool slidey movements-->
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="../static/js/script.js"></script>
+  <script type="text/javascript" src="{{ url_for('static', filename='index.js') }}"></script>
+</body>
+
+<footer class="credit">
+  <p class="copyright"> © 2023 üMatter, Designed by Tharuth Attanayake and Sigmund Wang</p>
+</footer>
+
+</html>
