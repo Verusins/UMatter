@@ -10,9 +10,6 @@ def home():
 def evaluation():
     return render_template("evaluation.html")
 
-@views.route('/professionals')
-def professionals():
-    return render_template("professionals.html")
 
 @views.route('/support')
 def support():

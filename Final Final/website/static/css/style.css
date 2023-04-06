@@ -410,10 +410,67 @@ section{
   margin:0;
 }
 
+/*support page*/
+
+.support{
+  background: url(../image/support.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.support .row{
+  display:flex;
+  align-items:center;
+  flex-wrap: wrap;
+  gap:1.5rem;
+  margin:0;
+}
+
+.support .row .content{
+  flex:1 1 42rem;
+  margin:0;
+}
+
+.support .row .books-slider{
+  flex:1 1 42rem;
+  text-align:center;
+  margin:0;
+  margin-top: 2rem;
+}
+
+.support .row .books-slider a img{
+  height: 25rem;
+}
+
+.support .row .books-slider a:hover img{
+  transform: scale(.9);
+}
+
+.support .row .books-slider .stand{
+  width:100%;
+  margin-top: -2rem;
+}
+
+.support .row .content h3{
+  color: var(--black);
+  font-size: 4.5rem;
+  margin:0;
+}
+
+.support .row .content p{
+  color: black;
+  font-size: 1.5rem;
+  line-height: 2;
+  padding: 1rem 0;
+  text-transform: none;
+  margin:0;
+}
+
 /*featured css
   this is my five books of the week section*/
 
 .featured .featured-slider .box,
+.featured .arrivals-slider .box,
 .featured .other-slider .box{
   width:25rem;
   margin:2rem 0;
@@ -426,27 +483,32 @@ section{
 }
 
 .featured .featured-slider .box:hover,
+.featured .arrivals-slider .box:hover,
 .featured .other-slider .box:hover{
   border:var(--border-hover);
 }
 
 .featured .featured-slider .box .image,
+.featured .arrivals-slider .box:hover,
 .featured .other-slider .box .image{
   padding:1rem;
   background: linear-gradient(15deg,#eee 30%, #fff 30.1%);
 }
 
 .featured .featured-slider .box:hover .image,
+.featured .arrivals-slider .box:hover,
 .featured .other-slider .box:hover .image{
   transform: translateY(6rem);
 }
 
 .featured .featured-slider .box .image img,
+.featured .arrivals-slider .box .image img,
 .featured .other-slider .box .image img{
   height: 25rem;
 }
 
 .featured .featured-slider .box .icons,
+.featured .arrivals-slider .box .icons,
 .featured .other-slider .box .icons{
   border-bottom: var(--border-hover);
   position: absolute;
@@ -457,11 +519,13 @@ section{
 }
 
 .featured .featured-slider .box:hover .icons,
+.featured .arrivals-slider .box:hover .icons,
 .featured .other-slider .box:hover .icons{
   transform: translateY(0%);
 }
 
 .featured .featured-slider .box .icons a,
+.featured .arrivals-slider .box .icons a,
 .featured .other-slider .box .icons a{
   color:var(--black);
   font-size: 2.2rem;
@@ -469,12 +533,14 @@ section{
 }
 
 .featured .featured-slider .box .icons a:hover,
+.featured .arrivals-slider .box .icons a:hover,
 .featured .other-slider .box .icons a:hover{
   background: var(--green);
   color:#fff
 }
 
 .featured .featured-slider .box .content,
+.featured .arrivals-slider .box .content,
 .featured .other-slider .box .content{
   background: #eee;
   padding:1.5rem;
@@ -482,12 +548,14 @@ section{
 }
 
 .featured .featured-slider .box .content h3,
+.featured .arrivals-slider .box .content h3,
 .featured .other-slider .box .content h3{
   font-size: 1.9rem;
   color: var(--black);
 }
 
 .featured .featured-slider .box .content .price,
+.featured .arrivals-slider .box .content .price,
 .featured .other-slider .box .content .price{
   font-size: 2.2rem;
   color: var(--black);
@@ -496,6 +564,7 @@ section{
 }
 
 .featured .featured-slider .box .content .price span,
+.featured .arrivals-slider .box .content .price span,
 .featured .other-slider .box .content .price span{
   font-size: 1.5rem;
   padding-left:.5rem;
@@ -1027,6 +1096,22 @@ section{
     font-size: 3.5rem;
   }
 
+  .support .row{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-left: 60px;
+  }
+
+  .support .row .content{
+    text-align: center;
+  }
+
+  .support .row .content h3{
+    font-size: 3.5rem;
+  }
+
   .newsletter{
     background-position: right;
     margin-left: 60px;
@@ -1151,6 +1236,14 @@ section{
     margin-left: 0px;
   }
 
+  .support .row{
+    display:flex;
+    align-items:center;
+    flex-wrap: wrap;
+    gap:1.5rem;
+    margin-left: 0px;
+  }
+
   .featured,
   .newsletter,
   .breathe,
@@ -1160,6 +1253,7 @@ section{
   }
 
   .featured .featured-slider .box,
+  .featured .arrivals-slider .box,
   .featured .other-slider .box{
     width:100%;
     margin: 0.5rem 0;
