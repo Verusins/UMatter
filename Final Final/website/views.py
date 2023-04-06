@@ -14,3 +14,7 @@ def evaluation():
 @views.route('/support')
 def support():
     return render_template("support.html")
+
+@views.route('/test')
+def test():
+    return render_template("test.html")

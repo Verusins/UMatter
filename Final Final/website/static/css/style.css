@@ -572,6 +572,11 @@ section{
   text-decoration:wavy;
 }
 
+/*The test/evaluation content part*/
+.test-content{
+  font-size: 2em;
+}
+
 /*you'll see "swiper" a lot, this was basically a third-party script which let me get those smooth animations
   that you see on the page :) */
 
