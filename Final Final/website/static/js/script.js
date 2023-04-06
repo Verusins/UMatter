@@ -3,10 +3,7 @@ loginForm = document.querySelector('.login-form-container');
 if (window.location.href.search(/login/) != -1) {
   loginForm.classList.toggle('active');
 }
-document.querySelector('#login-btn').onclick = () =>{
-  loginForm.classList.toggle('active');
-}
-document.querySelector('#close-login-btn').onclick = () =>{
+if (window.location.href.search(/sign-up/) != -1) {
   loginForm.classList.toggle('active');
 }
 
@@ -95,7 +92,7 @@ var swiper = new Swiper(".arrivals-slider", {
       slidesPerView: 1,
     },
     1024: {
-      slidesPerView: 3,
+      slidesPerView: 2,
     },
   },
 });
