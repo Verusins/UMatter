@@ -1,0 +1,60 @@
+{% extends "base.html" %} {% block title %} Test In Process{% endblock %}
+{% block content %}
+    <!-- Your codes here -->
+    <section class="featured" id="featured">
+        <form class="test-content">
+            <ol>
+                <!-- Major Disorder Overall -->
+                <!-- Generalized Anxiety Disorder -->
+                <p>Have You Experienced Any of the Symptoms below in the Past Six Months?</p>
+                <li>I was very anxious, worried or scared about a lot of things in my life.</li>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Yes
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Sometimes
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Barely
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
+                    No
+                </label>
+                <li>I had trouble sleeping - I could not fall or stay asleep, and/or didn't feel well-rested when I woke up.</li>
+                <li>I was scared that I would lose control, go crazy, or die.</li>
+                <br>
+                <!-- Post-Traumatic Stress Disorder -->
+                <p>How did you find traumatic events?</p>
+                <li>Directly - I was a victim of a traumatic event.</li>
+                <li>My life is partially/formerly affected by that traumatic event.</li>
+                <li>I had trouble focusing, concentrating, or remembering things. I was unable to feel happiness, contentment, joy, or love, or had trouble connecting with people.</li>
+                <br>
+                <!-- Panic Disorder -->
+                <p>In the past year, did you experience any of the following symptoms for at least 2 weeks? If so, how strong were they?</p>
+                <li>I frequently felt sad, like I couldn't go on.</li>
+                <li>The sadness I was feeling made it difficult for me to function in my personal, social, or work life.</li>
+                <li>I kept thinking about death or taking my own life.</li>
+                <br>
+                <!-- Panic Attacks -->
+                <p>In the past year, did you experience any of the following symptoms for at least 1 week? If so, how strong were they?</p>
+                <li>I experienced an unusually elevated mood where I was extremely elated, energetic, or irritable.</li>
+                <li>I had periods of time when I needed little or no sleep, yet functioned as well or better than usual.</li>
+                <li>The mood changes I experienced kept me from living my life to the fullest, or required me to be hospitalized to prevent harm to myself/others.</li>
+                <br>
+                <!-- Substance Use Disorder -->
+                <p>In the last year, have you used the following substances? If so, how often?</p>
+                <li>Alcohol</li>
+                <li>Cannabis</li>
+                <li>Hallucinogens (e.g. LSD, Peyote, Psilocybin, PCP); Inhalants (e.g. glue, aerosols, lighter fluid, gasoline - products used for mind-altering purposes rather than what they are intended for); Opioids (e.g. Heroin, Codeine, Morphine, Ocycodone); 	Sedatives/Hypnotics/Anxiolytics (e.g. Valium, Xanax, Restoril, Ativan); 	Stimulants (e.g. Cocaine, Ecstasy, Speed, Methamphetamine; Ritalin, Concerta, Biphetamine, Dexedrine)</li>
+                <li>Other substance not listed</li>
+                <li>Which of the following caused you the most problems (socially, at work/school, or in your personal life)?</li>
+                <li>Have you experienced any reliability or used the substance in situations in which it was physically dangerous or risky to do so?</li>
+                <br>
+            </ol>
+        </form>
+    </section>
+{% endblock %}
