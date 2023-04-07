@@ -3,24 +3,24 @@
   <!--login form-->
   <div class="login-form-container">
     <a href="/" id="close-login-btn" class="fas fa-times"></a>
-    <form action="" method="POST">
-        <!-- feedback -->
-      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+    <!-- feedback -->
+    {% with messages = get_flashed_messages(with_categories=true) %} {% if
         messages %} {% for category, message in messages %} {% if category ==
         'error' %}
         <div class="alert alert-danger" role="alert">
         {{ message }}
         </div>
-        {% else %}
-        <div class="alert alert-success" role="alert">
         {{ message }}
           <!-- <button type="button" class="close" data-dismiss="alert">
             <a href="/" id="close-login-btn" class="fas fa-times"></a>
           </button> -->
         </div>
-      {% endif %} {% endfor %} {% endif %} {% endwith %}
+    {% endif %} {% endfor %} {% endif %} {% endwith %}
+    
+
+    <form action="" method="POST">
       <h3>Sign-In</h3>
-      <span>Username</span>
+      <span>Email</span>
       <input type="email" name="email" class="box" placeholder="Please Enter Your Email" id="email" required>
       <span>Password</span>      
       <input type="password" name="password" class="box" placeholder="Please Enter Your Password" id="password" required>
