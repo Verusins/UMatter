@@ -2,6 +2,7 @@
 {% block content %}
     <!-- Your codes here -->
     <section class="featured" id="featured">
+        <h1 class="heading"><span>Evaluation</span></h1>
         <form class="test-content">
             <ol>
                 <!-- Major Disorder Overall -->
@@ -59,9 +60,9 @@
                     <input type="radio" name="q3" value="red" id="q3">
                     No
                 </label>
-                <p><em>Please tally up your scores: Yes = 4; Sometimes = 3; Barely = 2; No = 1</em></p>
+                <p><em>Please tally up your scores: Yes = 3; Sometimes = 2; Barely = 1; No = 0</em></p>
                 </section>
-                <p>If you have a score of 7 or above, you might have General Anxiety Disorder.</p>
+                <p>If you have a score of 5 or above, you might have General Anxiety Disorder.</p>
                 <p>Please consider seeing a professional and seeking additional help as soon as possible.</p>
                 <br>
                 <!-- Post-Traumatic Stress Disorder -->
@@ -118,7 +119,7 @@
                     <input type="radio" name="q3" value="red" id="q3">
                     No
                 </label>
-                <p><em>Please tally up your scores: Yes = 4; Sometimes = 3; Barely = 2; No = 1</em></p>
+                <p><em>Please tally up your scores: Yes = 3; Sometimes = 2; Barely = 1; No = 0</em></p>
                 </section>
                 <p>If you have a score of 7 or above, you might have Post-Traumatic Stress Disorder.</p>
                 <p>Please consider seeing a professional and seeking additional help as soon as possible.</p>
@@ -177,7 +178,7 @@
                     <input type="radio" name="q3" value="red" id="q3">
                     No
                 </label>
-                <p><em>Please tally up your scores: Yes = 4; Sometimes = 3; Barely = 2; No = 1</em></p>
+                <p><em>Please tally up your scores: Yes = 3; Sometimes = 2; Barely = 1; No = 0</em></p>
                 </section>
                 <p>If you have a score of 7 or above, you might have Panic Disorder.</p>
                 <p>Please consider seeing a professional and seeking additional help as soon as possible.</p>
@@ -188,15 +189,19 @@
                 <li>I experienced an unusually elevated mood where I was extremely elated, energetic, or irritable.</li>
                 <label>
                     <input type="radio" name="q1" value="red" id="q1">
-                    Yes
+                    Severe
                 </label>
                 <label>
                     <input type="radio" name="q1" value="red" id="q1">
-                    Sometimes
+                    Strong
                 </label>
                 <label>
                     <input type="radio" name="q1" value="red" id="q1">
-                    Barely
+                    Mild
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Weak
                 </label>
                 <label>
                     <input type="radio" name="q1" value="red" id="q1">
@@ -204,39 +209,47 @@
                 </label>
                 <li>I had periods of time when I needed little or no sleep, yet functioned as well or better than usual.</li>
                 <label>
-                    <input type="radio" name="q2" value="red" id="q2">
-                    Yes
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Severe
                 </label>
                 <label>
-                    <input type="radio" name="q2" value="red" id="q2">
-                    Sometimes
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Strong
                 </label>
                 <label>
-                    <input type="radio" name="q2" value="red" id="q2">
-                    Barely
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Mild
                 </label>
                 <label>
-                    <input type="radio" name="q2" value="red" id="q2">
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Weak
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
                     No
                 </label>
                 <li>The mood changes I experienced kept me from living my life to the fullest, or required me to be hospitalized to prevent harm to myself/others.</li>
                 <label>
-                    <input type="radio" name="q3" value="red" id="q3">
-                    Yes
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Severe
                 </label>
                 <label>
-                    <input type="radio" name="q3" value="red" id="q3">
-                    Sometimes
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Strong
                 </label>
                 <label>
-                    <input type="radio" name="q3" value="red" id="q3">
-                    Barely
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Mild
                 </label>
                 <label>
-                    <input type="radio" name="q3" value="red" id="q3">
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Weak
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
                     No
                 </label>
-                <p><em>Please tally up your scores: Yes = 4; Sometimes = 3; Barely = 2; No = 1</em></p>
+                <p><em>Please tally up your scores: Severe = 4; Strong = 3; Mild = 2; Weak = 1; No = 0</em></p>
                 </section>
                 <p>If you have a score of 7 or above, you are experiencing Panic Attacks.</p>
                 <p>Please consider seeing a professional and seeking additional help as soon as possible.</p>
@@ -247,15 +260,19 @@
                 <li>Alcohol</li>
                 <label>
                     <input type="radio" name="q1" value="red" id="q1">
-                    Yes
+                    Every day
                 </label>
                 <label>
                     <input type="radio" name="q1" value="red" id="q1">
-                    Sometimes
+                    At least every week
                 </label>
                 <label>
                     <input type="radio" name="q1" value="red" id="q1">
-                    Barely
+                    At least every month
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Maybe a few times
                 </label>
                 <label>
                     <input type="radio" name="q1" value="red" id="q1">
@@ -263,43 +280,71 @@
                 </label>
                 <li>Cannabis</li>
                 <label>
-                    <input type="radio" name="q2" value="red" id="q2">
-                    Yes
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Every day
                 </label>
                 <label>
-                    <input type="radio" name="q2" value="red" id="q2">
-                    Sometimes
+                    <input type="radio" name="q1" value="red" id="q1">
+                    At least every week
                 </label>
                 <label>
-                    <input type="radio" name="q2" value="red" id="q2">
-                    Barely
+                    <input type="radio" name="q1" value="red" id="q1">
+                    At least every month
                 </label>
                 <label>
-                    <input type="radio" name="q2" value="red" id="q2">
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Maybe a few times
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
                     No
                 </label>
                 <li>Hallucinogens (e.g. LSD, Peyote, Psilocybin, PCP); Inhalants (e.g. glue, aerosols, lighter fluid, gasoline - products used for mind-altering purposes rather than what they are intended for); Opioids (e.g. Heroin, Codeine, Morphine, Ocycodone); 	Sedatives/Hypnotics/Anxiolytics (e.g. Valium, Xanax, Restoril, Ativan); 	Stimulants (e.g. Cocaine, Ecstasy, Speed, Methamphetamine; Ritalin, Concerta, Biphetamine, Dexedrine)</li>
                 <label>
-                    <input type="radio" name="q3" value="red" id="q3">
-                    Yes
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Every day
                 </label>
                 <label>
-                    <input type="radio" name="q3" value="red" id="q3">
-                    Sometimes
+                    <input type="radio" name="q1" value="red" id="q1">
+                    At least every week
                 </label>
                 <label>
-                    <input type="radio" name="q3" value="red" id="q3">
-                    Barely
+                    <input type="radio" name="q1" value="red" id="q1">
+                    At least every month
                 </label>
                 <label>
-                    <input type="radio" name="q3" value="red" id="q3">
+                    <input type="radio" name="q1" value="red" id="q1">
+                    Maybe a few times
+                </label>
+                <label>
+                    <input type="radio" name="q1" value="red" id="q1">
                     No
                 </label>
-                <p><em>Please tally up your scores: Yes = 4; Sometimes = 3; Barely = 2; No = 1</em></p>
+                <li>Which one affect u the most?</li>
+                <label>
+                    <input type="radio" name="q4" value="red" id="q1">
+                    Alcohol
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="red" id="q1">
+                    Cannabis
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="red" id="q1">
+                    Other
+                </label>
+                <label>
+                    <input type="radio" name="q4" value="red" id="q1">
+                    Hell no bro I don't do addictive stuffs
+                </label>
+                <p><em>Please tally up your scores: Every day = 4; At least every week = 3; At least every month = 2; Maybe a few times = 1; No = 0； If you are actually dependent on something, please add additional 2 marks</em></p>
                 </section>
-                <p>If you have a score of 7 or above, you might have Substance-Use Disorder.</p>
+                <p>If you have a score of 8 or above, you might have Substance-Use Disorder.</p>
                 <p>Please consider seeing a professional and seeking additional help as soon as possible.</p>
             </ol>
+            <br>
+            <br>
+            <p>That is the end of the small test. If you are still unsure how to deal with the disorder or need to see the treatment, please go to the home page and look it up! Thanks for participating!</p>
         </form>
     </section>
 {% endblock %}

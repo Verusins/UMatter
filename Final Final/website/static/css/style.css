@@ -245,6 +245,12 @@ section{
   background: var(--dark-color);
 }
 
+.centered {
+  text-align: center;
+  left: 40%;
+  right: 40%;
+}
+
 /*login/register css*/
 
 .login-form-container{
