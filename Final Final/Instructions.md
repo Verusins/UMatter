@@ -29,6 +29,12 @@ python main.py
 
 Go to `http://127.0.0.1:5000`
 
+## Functionalities
+1. Login and Logout system.
+2. Home - general things that we have. (Inside there are email subscriptions)
+3. Evaluation - A basic evaluation of major possible disorders.
+4. Support - other links to possible resources.
+
 ## Special Mentions
 
 We have imprelemented the Username "Brian Harrington" with email "brian.harrington@utoronto.ca" and password "Rickroll". Feel free to try to use this account!
