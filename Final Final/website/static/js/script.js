@@ -7,6 +7,11 @@ if (window.location.href.search(/sign-up/) != -1) {
   loginForm.classList.toggle('active');
 }
 
+//email subscription alert
+function sendEmail() {
+  alert("Email sent! (This is just a prototype and we are not sending anything to your actual email because of probable authentication issues, sorry for that.)");
+}
+
 //header deselector? whatever it's called to leave it behind
 window.onscroll = () =>{
   searchForm.classList.remove('active');
